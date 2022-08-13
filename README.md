@@ -28,9 +28,7 @@ public class FlightTicketRequest {
                 .then()
                 .statusCode(200)
                 .extract().response();
-        ObjectMapper mapper = new ObjectMapper();
-        Root[] flightList = mapper.readValue(response.getBody().toString(), Root[].class);
-
+        response.asString;
 
     }
 }
